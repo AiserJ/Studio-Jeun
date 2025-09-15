@@ -46,3 +46,9 @@
   color: #9a9a9a;
   background: #0d0d0d;
 }
+.sj-img-fluid{
+  max-width:100%;
+  height:auto;
+  display:block;        /* enlève l’espace sous l’image */
+  border-radius:12px;   /* optionnel pour matcher tes cards */
+}
