@@ -194,7 +194,7 @@ export default function Home() {
             <div className="sj-card">
               <h3 className="mb-8">Avant / Après</h3>
               <div className="sj-placeholder">
-                <img src={7} alt="Avant après Calma Bonita" />
+                <img src={img7} alt="Avant après Calma Bonita" />
               </div>
             </div>
           </div>
