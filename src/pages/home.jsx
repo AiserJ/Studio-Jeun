@@ -209,7 +209,6 @@ export default function Home() {
         <div className="sj-container">
           <div className="sj-topline">
             <h2>Réalisations</h2>
-            <a className="sj-linkline sj-a" href="/realisations">Voir toutes les réalisations →</a>
           </div>
 
           <section className="recent-works">
