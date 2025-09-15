@@ -13,6 +13,7 @@ import img3 from "../assets/PSK.jpg";
 import img4 from "../assets/NNC.jpg";
 import img5 from "../assets/NCB.jpg";
 import img6 from "../assets/AF1B.jpg";
+import img7 from "../assets/AVAP.jpeg";
 
 export default function Home() {
   const email = "studiojeun@icloud.com";
@@ -193,7 +194,7 @@ export default function Home() {
             <div className="sj-card">
               <h3 className="mb-8">Avant / Après</h3>
               <div className="sj-placeholder">
-                Placeholders de tes projets (Jordan 13, AF1 Slam Jam, etc.)
+                <img src={7} alt="Avant après Calma Bonita" />
               </div>
             </div>
           </div>
