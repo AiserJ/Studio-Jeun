@@ -18,3 +18,11 @@
 .sj-badge-hero .t2{ font-weight:900; font-size:clamp(22px, 4vw, 36px); letter-spacing:-.01em; }
 .sj-badge-hero .t3{ color:#9a9a9a; margin-top:6px; font-size:12px; }
 .sj-badge-hero img{ width:85%; height:85%; object-fit:contain; }
+
+@media (min-width: 1024px) {
+  .sj-badge-hero img {
+    width: 100%;
+    height: 85%;
+    object-fit: contain;
+  }
+}

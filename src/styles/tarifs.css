@@ -16,20 +16,36 @@
 .sj-card h3 { margin: 0 0 6px 0; font-size: 18px; font-weight: 800; }
 .sj-card p { margin: 0; color: rgba(255,255,255,.8); }
 
-/* Colonnes: “Notre approche” + “Avant/Après” */
-.sj-columns { display: grid; gap: 16px; margin-top: 24px; }
-@media (min-width: 1000px) {
-  .sj-columns { grid-template-columns: 2fr 1fr; }
+.sj-columns {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+  margin-inline: auto;         /* centre le bloc dans le conteneur parent */
+  width: 100%;
+  max-width: 1200px;           /* ajuste au besoin (selon ta .sj-container) */
 }
 
-/* Centre uniquement la carte marquée --center */
-.sj-card--center {
-  text-align: center;                 /* centre le texte */
+@media (min-width: 1000px) {
+  .sj-columns {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
 }
 
 /* Centre les items dans la grille des étapes */
+
+.sj-card--center {
+  /* la carte ne prendra pas toute la largeur de la colonne 2fr */
+  justify-self: center;         /* centre la carte DANS sa colonne du grid */
+  width: 100%;
+  max-width: 760px;             /* largeur confortable (à ajuster) */
+  text-align: center;           /* centre le texte (titre, contenus) */
+}
+
+/* Centre et compacte la grille des étapes à l'intérieur de la carte */
 .sj-card--center .sj-steps {
-  justify-items: center;              /* centre horizontalement chaque .sj-step */
+  justify-content: center;      /* centre la grille dans la carte */
+  justify-items: center;        /* centre chaque .sj-step dans sa cellule */
 }
 
 /* Optionnel : largeur max des steps pour une meilleure lisibilité */
@@ -41,8 +57,8 @@
 /* Sur écrans >=700px : colonnes fixes centrées (au lieu de s’étirer sur 100%) */
 @media (min-width: 700px) {
   .sj-card--center .sj-steps {
-    grid-template-columns: repeat(3, minmax(0, 260px));
-    justify-content: center;          /* centre les 3 colonnes dans le conteneur */
+    /* 3 colonnes, largeur contrôlée pour éviter l'étirement plein écran */
+    grid-template-columns: repeat(3, minmax(0, 240px));
   }
 }
 
@@ -62,13 +78,13 @@
 
 /* Placeholder “Avant/Après” */
 .sj-placeholder {
-  border: 1px solid var(--sj-border);
+  /* border: 1px solid var(--sj-border); */
   border-radius: 16px;
   aspect-ratio: 16/9;
   display: grid;
   place-items: center;
   color: #9a9a9a;
-  background: #0d0d0d;
+  /*background: #0d0d0d; */
 }
 .sj-img-fluid {
   max-width:100%;
