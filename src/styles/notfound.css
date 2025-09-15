@@ -1,0 +1,27 @@
+/* src/styles/notfound.css */
+
+/* Conteneur global */
+.sj-404 {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Titre 404 */
+.sj-404 h1 {
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--sj-fg);
+}
+
+/* Texte d'explication */
+.sj-404 p {
+  font-size: 1.1rem;
+  color: var(--sj-muted);
+  margin-bottom: 2rem;
+}
+
+/* Bouton retour */
+.sj-404 .sj-btn {
+  display: inline-block;
+}

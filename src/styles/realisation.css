@@ -1,0 +1,16 @@
+.recent-works{ padding:40px 20px; background-color:#000; color:#fff; text-align:center; }
+.recent-works h2{ font-size:2rem; margin-bottom:30px; }
+
+.works-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+.work-card{ background-color:#111; border-radius:12px; overflow:hidden; transition: transform .3s ease; }
+.work-card:hover{ transform: scale(1.03); }
+.work-card img{ width:100%; height:300px; object-fit:cover; }
+.work-card p{ padding:10px; font-size:.9rem; color:#ccc; }
+
+/* Option galerie générique (si tu l'utilises) */
+.sj-grid{ display:grid; gap:10px; grid-template-columns:1fr; margin-top:18px; }
+@media(min-width:640px){ .sj-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media(min-width:1024px){ .sj-grid{ grid-template-columns: repeat(3, 1fr); } }
+.sj-tile{ position:relative; overflow:hidden; border-radius:16px; background:#0f0f0f; border:1px solid var(--sj-border); aspect-ratio:4/3; }
+.sj-tile::after{ content:"Image"; position:absolute; inset:0; display:grid; place-items:center; color:#888; }
+.sj-tile:hover{ outline:2px solid #333; }

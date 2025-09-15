@@ -1,0 +1,2 @@
+.sj-footer{ border-top:1px solid var(--sj-border); height:80px; display:flex; align-items:center; }
+.sj-foot-row{ display:flex; align-items:center; justify-content:space-between; gap:16px; color:#aaa; font-size:14px; }

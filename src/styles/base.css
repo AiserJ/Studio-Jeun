@@ -1,0 +1,33 @@
+/* src/styles/global.css */
+html, body { height: 100%; background-color: #000; }
+
+/* AJOUTE/REMPLACE ceci pour que toute l'app ait la même police */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji","Segoe UI Emoji";
+  color: var(--sj-fg);
+  background: var(--sj-bg);
+}
+
+:root {
+  --sj-bg: #000; --sj-fg: #fff; --sj-muted: #bfbfbf;
+  --sj-card: #111; --sj-border: #222; --sj-accent: #ffffff;
+  --sj-radius: 20px; --sj-max: 1200px;
+}
+
+.sj-root { background: var(--sj-bg); color: var(--sj-fg); min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji","Segoe UI Emoji"; }
+
+.sj-container { max-width: var(--sj-max); margin: 0 auto; padding: 0 20px; }
+
+.sj-section { padding: 64px 0; border-top: 1px solid var(--sj-border); }
+.sj-section h2 { font-size: clamp(22px, 3vw, 32px); font-weight: 900; letter-spacing: -.01em; }
+.sj-topline { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.sj-linkline { font-size: 14px; opacity: .85; }
+
+.sj-btn { background: var(--sj-fg); color: #000; padding: 10px 16px; border-radius: 999px;
+  font-weight: 600; border: none; cursor: pointer; text-decoration: none; }
+.sj-btn.secondary { background: transparent; color: var(--sj-fg); border: 1px solid var(--sj-fg); }
+
+.sj-a { color: var(--sj-fg); opacity: .9; text-decoration: none; padding-bottom: none; }
+.sj-a:hover { opacity: 1; text-decoration: underline; }
+.mb-8 { margin-bottom: 8px; }

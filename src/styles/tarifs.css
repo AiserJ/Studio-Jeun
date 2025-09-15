@@ -1,0 +1,48 @@
+
+.sj-cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .sj-cards { grid-template-columns: repeat(3, 1fr); }
+}
+.sj-card {
+  background: var(--sj-card);
+  border: 1px solid var(--sj-border);
+  border-radius: var(--sj-radius);
+  padding: 18px;
+}
+.sj-card h3 { margin: 0 0 6px 0; font-size: 18px; font-weight: 800; }
+.sj-card p { margin: 0; color: rgba(255,255,255,.8); }
+
+/* Colonnes: “Notre approche” + “Avant/Après” */
+.sj-columns { display: grid; gap: 16px; margin-top: 24px; }
+@media (min-width: 1000px) {
+  .sj-columns { grid-template-columns: 2fr 1fr; }
+}
+
+/* Étapes */
+.sj-steps { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 700px) {
+  .sj-steps { grid-template-columns: repeat(3, 1fr); }
+}
+.sj-step {
+  border: 1px solid var(--sj-border);
+  border-radius: 16px;
+  padding: 14px;
+  background: #0d0d0d;
+}
+.sj-step-title { font-weight: 700; margin-bottom: 4px; }
+.sj-muted { color: #cfcfcf; opacity: .85; }
+
+/* Placeholder “Avant/Après” */
+.sj-placeholder {
+  border: 1px solid var(--sj-border);
+  border-radius: 16px;
+  aspect-ratio: 16/9;
+  display: grid;
+  place-items: center;
+  color: #9a9a9a;
+  background: #0d0d0d;
+}
