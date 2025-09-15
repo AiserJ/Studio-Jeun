@@ -13,7 +13,7 @@ import img3 from "../assets/PSK.jpg";
 import img4 from "../assets/NNC.jpg";
 import img5 from "../assets/NCB.jpg";
 import img6 from "../assets/AF1B.jpg";
-import img7 from "../assets/AVAP.jpeg";
+import img7 from "../assets/AVAP.png";
 
 export default function Home() {
   const email = "studiojeun@icloud.com";
