@@ -149,57 +149,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
-      <section id="services" className="sj-section">
-        <div className="sj-container">
-          <div className="sj-topline">
-            <h2>Services</h2>
-            <a className="sj-linkline sj-a" href="#contact">Prendre contact →</a>
+    {/* Services */}
+<section id="services" className="sj-section">
+  <div className="sj-container">
+    <div className="sj-topline">
+      <h2>Services</h2>
+      <a className="sj-linkline sj-a" href="#contact">Prendre contact →</a>
+    </div>
+
+    <div className="sj-cards">
+      <article className="sj-card">
+        <h3 className="mb-8">Nettoyage Premium</h3>
+        <p>Dépoussiérage, brossage à la main, semelles, lacets et finitions. Produits respectueux des matières.</p>
+      </article>
+      <article className="sj-card">
+        <h3 className="mb-8">Restauration</h3>
+        <p>Réparation de microfissures, recoloration du cuir, décrassage profond, repaints ciblés.</p>
+      </article>
+      <article className="sj-card">
+        <h3 className="mb-8">Custom & Personnalisation</h3>
+        <p>Designs sur-mesure (Air Force, Jordan, Converse) avec vernis et protection longue durée.</p>
+      </article>
+    </div>
+
+    <div className="sj-columns">
+      <article className="sj-card sj-card--center">
+        <h3 className="mb-8">Notre approche en 3 étapes</h3>
+        <div className="sj-steps">
+          <div className="sj-step">
+            <div className="sj-step-title">1. Diagnostic</div>
+            <div className="sj-muted">On évalue l'état, les matières et le rendu souhaité.</div>
           </div>
-
-          <div className="sj-cards">
-            <article className="sj-card">
-              <h3 className="mb-8">Nettoyage Premium</h3>
-              <p>Dépoussiérage, brossage à la main, semelles, lacets et finitions. Produits respectueux des matières.</p>
-            </article>
-            <article className="sj-card">
-              <h3 className="mb-8">Restauration</h3>
-              <p>Réparation de microfissures, recoloration du cuir, décrassage profond, repaints ciblés.</p>
-            </article>
-            <article className="sj-card">
-              <h3 className="mb-8">Custom & Personnalisation</h3>
-              <p>Designs sur-mesure (Air Force, Jordan, Converse) avec vernis et protection longue durée.</p>
-            </article>
+          <div className="sj-step">
+            <div className="sj-step-title">2. Traitement</div>
+            <div className="sj-muted">Nettoyage / restauration / custom selon le besoin.</div>
           </div>
-
-              <div className="sj-columns">
-                <article className="sj-card sj-card--center">
-                  <h3 className="mb-8">Notre approche en 3 étapes</h3>
-                  <div className="sj-steps">
-                <div className="sj-step">
-                  <div className="sj-step-title">1. Diagnostic</div>
-                  <div className="sj-muted">On évalue l'état, les matières et le rendu souhaité.</div>
-                </div>
-                <div className="sj-step">
-                  <div className="sj-step-title">2. Traitement</div>
-                  <div className="sj-muted">Nettoyage / restauration / custom selon le besoin.</div>
-                </div>
-                <div className="sj-step">
-                  <div className="sj-step-title">3. Protection</div>
-                  <div className="sj-muted">Finitions et scellants pour une meilleure durabilité.</div>
-                </div>
-              </div>
-            </article>
-
-            <div className="sj-card">
-              <h3 className="mb-8">Avant / Après</h3>
-              <div className="sj-placeholder">
-                <img className="sj-img-fluid" src={img7} alt="Avant après Calma Bonita" />
-              </div>
-            </div>
+          <div className="sj-step">
+            <div className="sj-step-title">3. Protection</div>
+            <div className="sj-muted">Finitions et scellants pour une meilleure durabilité.</div>
           </div>
         </div>
-      </section>
+      </article>
+
+      {/* Carte Avant / Après (désactivée) */}
+      {/*
+      <div className="sj-card">
+        <h3 className="mb-8">Avant / Après</h3>
+        <div className="sj-placeholder">
+          <img className="sj-img-fluid" src={img7} alt="Avant après Calma Bonita" />
+        </div>
+      </div>
+      */}
+    </div>
+  </div>
+</section>
 
       {/* Réalisations (aperçu) */}
       <section id="work" className="sj-section">
