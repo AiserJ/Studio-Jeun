@@ -172,10 +172,10 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="sj-columns">
-            <article className="sj-card">
-              <h3 className="mb-8">Notre approche en 3 étapes</h3>
-              <div className="sj-steps">
+              <div className="sj-columns">
+                <article className="sj-card sj-card--center">
+                  <h3 className="mb-8">Notre approche en 3 étapes</h3>
+                  <div className="sj-steps">
                 <div className="sj-step">
                   <div className="sj-step-title">1. Diagnostic</div>
                   <div className="sj-muted">On évalue l'état, les matières et le rendu souhaité.</div>

@@ -22,6 +22,30 @@
   .sj-columns { grid-template-columns: 2fr 1fr; }
 }
 
+/* Centre uniquement la carte marquée --center */
+.sj-card--center {
+  text-align: center;                 /* centre le texte */
+}
+
+/* Centre les items dans la grille des étapes */
+.sj-card--center .sj-steps {
+  justify-items: center;              /* centre horizontalement chaque .sj-step */
+}
+
+/* Optionnel : largeur max des steps pour une meilleure lisibilité */
+.sj-card--center .sj-step {
+  text-align: center;
+  max-width: 28ch;                    /* ajuste si besoin (ou supprime) */
+}
+
+/* Sur écrans >=700px : colonnes fixes centrées (au lieu de s’étirer sur 100%) */
+@media (min-width: 700px) {
+  .sj-card--center .sj-steps {
+    grid-template-columns: repeat(3, minmax(0, 260px));
+    justify-content: center;          /* centre les 3 colonnes dans le conteneur */
+  }
+}
+
 /* Étapes */
 .sj-steps { display: grid; gap: 12px; grid-template-columns: 1fr; }
 @media (min-width: 700px) {
