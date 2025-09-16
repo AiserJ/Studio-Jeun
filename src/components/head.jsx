@@ -19,12 +19,16 @@ export default function Head(){
           <span/><span/><span/>
         </button>
 
-        <nav className={`nav ${open ? "nav--open":""}`}>
-          {/* ancres vers la page d'accueil */}
-          <a href="/#services">Services</a>
-          <a href="/#work">Réalisations</a>
-          <a href="/#contact" className="btn">Contact</a>
-        </nav>
+          <nav
+            className={`nav ${open ? "nav--open" : ""}`}
+            onClick={(e) => {
+              if (e.target.tagName === "A") setOpen(false);
+            }}
+          >
+            <a href="/#services">Services</a>
+            <a href="/#work">Réalisations</a>
+            <a href="/#contact" className="btn">Contact</a>
+          </nav>
       </div>
     </header>
   );
